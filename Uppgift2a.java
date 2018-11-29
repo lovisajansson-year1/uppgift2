@@ -3,24 +3,28 @@ import java.util.Scanner;
 public class Uppgift2a {
 
 	public static void main(String[] args) {
+		
+		//läsa in 2 tal, skriv ut största, om lika ska det skrivas ut
 		Scanner stdIn= new Scanner(System.in);
 		
-		int tal1;
-		int tal2;
+		int nmbr1;
+		int nmbr2;
 		
 		System.out.print("tal 1:");
-		tal1 = stdIn.nextInt();
+		nmbr1 = stdIn.nextInt(); //läser in första talet
 		
 		System.out.print("tal 2:");
-		tal2 = stdIn.nextInt();
+		nmbr2 = stdIn.nextInt(); //läser in andra talet
 		
-			if (tal1 > tal2) {
-				System.out.print(tal1 + " är större än " + tal2);
+			if (nmbr1 > nmbr2) {
+				System.out.print(nmbr1 + " är större än " + nmbr2);
 		
-			}else if (tal2 > tal1) {
-				System.out.print(tal2 + " är större än " + tal1);
-			}else if (tal1 == tal2) {
+			}else if (nmbr2 > nmbr1) {
+				System.out.print(nmbr2 + " är större än " + nmbr1);
+			}else if (nmbr1 == nmbr2) {
 				System.out.print("talen är lika");
 			}
+		
+		stdIn.close();	
 		}
 	}
